@@ -31,10 +31,10 @@ class PostSeeder extends Seeder
         //     'draft' => 0
         //     ]);
 
-        DB::table('pegawai')->insert([
+        DB::table('pelanggan')->insert([
             'nama' => 'Ridho',
             'alamat' => 'malang',
-            'Telp' => '085311891925'
+            'telp' => '085311891925'
             ]);
     }
 }

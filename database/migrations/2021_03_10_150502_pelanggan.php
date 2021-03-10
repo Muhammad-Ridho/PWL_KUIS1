@@ -14,6 +14,13 @@ class Pelanggan extends Migration
     public function up()
     {
         //
+        Schema::create('pelanggan', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama', 100);
+            $table->string('nama', 100);
+            $table->string('telp', 15);
+            $table->timestamps();
+            });
     }
 
     /**
@@ -24,5 +31,6 @@ class Pelanggan extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('pelanggan');
     }
 }
