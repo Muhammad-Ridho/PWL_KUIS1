@@ -39,8 +39,8 @@ class PostSeeder extends Seeder
         //         'nama' => 'Ridho',
         //         'alamat' => 'malang',
         //         'telp' => '085311891925'
-        //     ],
-        //     [
+        //         ]);
+        // DB::table('pelanggan')->insert([
         //         'nama' => 'zulfan',
         //         'alamat' => 'banyuwangi',
         //         'telp' => '081234567890'
@@ -48,29 +48,29 @@ class PostSeeder extends Seeder
         // //----------------------------------------------------------------------
 
         //-------------------------------insert data pegawai-------------------------
-        DB::table('pegawai')->insert([
-                'nama' => 'zulfan',
-                'alamat' => 'banyuwangi',
-                'telp' => '081234567890'
-            ],
-            [
-                'nama' => 'ridho',
-                'alamat' => 'banyuwangi',
-                'telp' => '089876543210',
-                ]);
+        // DB::table('pegawai')->insert([
+        //         'nama' => 'zulfan',
+        //         'alamat' => 'banyuwangi',
+        //         'telp' => '081234567890'
+        //         ]);
+        // DB::table('pegawai')->insert([
+        //         'nama' => 'ridho',
+        //         'alamat' => 'banyuwangi',
+        //         'telp' => '089876543210',
+        //         ]);
         //----------------------------------------------------------------------------
                
         //-----------------------------insert data supplier----------------------------
-        DB::table('supplier')->insert([
-                'nama' => 'ridho',
-                'alamat' => 'banyuwangi',
-                'telp' => '089876543210',
-            ],
-            [
-              'nama' => 'zulfan',
-              'alamat' => 'banyuwangi',
-              'telp' => '081234567890'
-               ]);
+        // DB::table('supplier')->insert([
+        //         'nama' => 'ridho',
+        //         'alamat' => 'banyuwangi',
+        //         'telp' => '089876543210',
+        //         ]);
+        // DB::table('supplier')->insert([
+        //       'nama' => 'zulfan',
+        //       'alamat' => 'banyuwangi',
+        //       'telp' => '081234567890'
+        //        ]);
         //----------------------------------------------------------------------------
 
     }
