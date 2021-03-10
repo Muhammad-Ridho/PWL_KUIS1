@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-     <h1>Halaman Supplier<h1>
+<div class="container">
+		<div class="row">
+			<div class="tm-white-box">
+				<h1>halaman supplier</h1>				
+			</div>		  			  	
+        </div>
+</div>
 
 @endsection
