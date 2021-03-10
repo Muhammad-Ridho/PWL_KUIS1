@@ -19,10 +19,6 @@ class AddImageIntoPostsTable extends Migration
             
         //     });
         
-        Schema::table('barang', function (Blueprint $table) {
-            $table->string('image', 255)->after('slug') ->nullable();
-            
-            });
     }
 
     /**
