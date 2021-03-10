@@ -23,12 +23,18 @@ class PostSeeder extends Seeder
         //     'draft' => 0
         //     ]);
 
-        DB::table('barang')->insert([
-            'title' => 'Meja Belajar',
-            'slug' => ' meja-belajar',
-            'image' => 'https://www.sinarmebel.com/wp-content/uploads/2020/01/Meja-Belajar.jpg',
-            'content' => 'Meja Belajar',
-            'draft' => 0
+        // DB::table('barang')->insert([
+        //     'title' => 'Meja Belajar',
+        //     'slug' => ' meja-belajar',
+        //     'image' => 'https://www.sinarmebel.com/wp-content/uploads/2020/01/Meja-Belajar.jpg',
+        //     'content' => 'Meja Belajar',
+        //     'draft' => 0
+        //     ]);
+
+        DB::table('pegawai')->insert([
+            'nama' => 'Ridho',
+            'alamat' => 'malang',
+            'Telp' => '085311891925'
             ]);
     }
 }
