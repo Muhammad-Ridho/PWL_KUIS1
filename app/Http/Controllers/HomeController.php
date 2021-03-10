@@ -68,4 +68,8 @@ class HomeController extends Controller
             return view('contact');
         }
 
+        public function barang(){
+            return view('barang');
+        }
+
 }
