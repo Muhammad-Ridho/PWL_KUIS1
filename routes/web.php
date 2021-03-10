@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BarangController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +40,9 @@ use App\Http\Controllers\HomeController;
     Route::get('/about', [HomeController::class, 'about']);
     Route::get('/features', [HomeController::class, 'features']);
     Route::get('/contact', [HomeController::class, 'contact']);
-    Route::get('/barang', [HomeController::class, 'barang']);
-    Route::get('/pelanggan', [HomeController::class, 'pelanggan']);
-    Route::get('/pegawai', [HomeController::class, 'pegawai']);
-    Route::get('/supplier', [HomeController::class, 'supplier']);
+
+    Rooute::get('/barang', [BarangController::class, 'tampilBarang']);
+    // Route::get('/barang', [HomeController::class, 'barang']);
+    // Route::get('/pelanggan', [HomeController::class, 'pelanggan']);
+    // Route::get('/pegawai', [HomeController::class, 'pegawai']);
+    // Route::get('/supplier', [HomeController::class, 'supplier']);
