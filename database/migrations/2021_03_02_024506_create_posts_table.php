@@ -13,15 +13,32 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->id();
-            $table->string('title', 100)->index();
-            $table->string('slug', 100)->index();
-            $table->text('content');
-            $table->boolean('draft')->default(false);
-            $table->timestamps();
-            });
-           
+    //    Schema::create('posts', function (Blueprint $table) {
+    //       $table->id();
+    //        $table->string('title', 100)->index();
+    //       $table->string('slug', 100)->index();
+    //        $table->text('content');
+    //        $table->boolean('draft')->default(false);
+    //        $table->timestamps();
+    //        });
+    
+            Schema::create('daftarPegawai', function (Blueprint $table) {
+                $table->id();
+                $table->string('title', 100)->index();
+                $table->string('slug', 100)->index();
+                $table->text('content');
+                $table->boolean('draft')->default(false);
+                $table->timestamps();
+                });
+
+                Schema::create('daftarSupplier', function (Blueprint $table) {
+                    $table->id();
+                    $table->string('title', 100)->index();
+                    $table->string('slug', 100)->index();
+                    $table->text('content');
+                    $table->boolean('draft')->default(false);
+                    $table->timestamps();
+                    });
     }
 
     /**
@@ -31,6 +48,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('daftarPegawai');
     }
 }
