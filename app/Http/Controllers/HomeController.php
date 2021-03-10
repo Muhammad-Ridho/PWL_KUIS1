@@ -72,4 +72,16 @@ class HomeController extends Controller
             return view('daftarBarang');
         }
 
+        public function pelanggan(){
+            return view('daftarPelanggan');
+        }
+
+        public function pegawai(){
+            return view('daftarPegawai');
+        }
+
+        public function supplier(){
+            return view('daftarSupplier');
+        }
+
 }
