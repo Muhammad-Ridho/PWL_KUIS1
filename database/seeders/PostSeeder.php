@@ -22,7 +22,9 @@ class PostSeeder extends Seeder
         //     'content' => 'Belajar Laravel itu menyenangkan',
         //     'draft' => 0
         //     ]);
+        //------------------------------------------------------------------------
 
+        //--------------------------insert data barang----------------------------
         // DB::table('barang')->insert([
         //     'title' => 'Meja Belajar',
         //     'slug' => ' meja-belajar',
@@ -30,12 +32,20 @@ class PostSeeder extends Seeder
         //     'content' => 'Meja Belajar',
         //     'draft' => 0
         //     ]);
+        //-----------------------------------------------------------------------
 
-        DB::table('pelanggan')->insert([
-            'nama' => 'Ridho',
-            'alamat' => 'malang',
-            'telp' => '085311891925'
-            ]);
+        //----------------------insert data pelanggan--------------------------
+        // DB::table('pelanggan')->insert([
+        //     'nama' => 'Ridho',
+        //     'alamat' => 'malang',
+        //     'telp' => '085311891925'
+        //     ]);
+        // DB::table('pelanggan')->insert([
+        //     'nama' => 'zulfan',
+        //     'alamat' => 'banyuwangi',
+        //     'telp' => '081234567890'
+        //     ]);
+        //----------------------------------------------------------------------
 
     //    DB::table('posts')->insert([
     //      'title' => 'Belajar Model Dengan Laravel',
