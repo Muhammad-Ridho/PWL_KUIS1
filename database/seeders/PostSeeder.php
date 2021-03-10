@@ -47,19 +47,18 @@ class PostSeeder extends Seeder
         //     ]);
         //----------------------------------------------------------------------
 
-    //    DB::table('posts')->insert([
-    //      'title' => 'Belajar Model Dengan Laravel',
-    //        'slug' => ' belajar-model-dengan-laravel',
-    //        'image' => 'https://via.placeholder.com/640x480.png/00ff77?text=Belajar Model',
-    //        'content' => 'Belajar Laravel itu menyenangkan',
-    //       'draft' => 0
-    //       ]);
-
-    // DB::table('Pegawai')->insert([
-    //           'nama' => 'zulfan',
-    //           'alamat' => 'banyuwangi',
-    //           'no hp' => '081234567890'
-    //            ]);
+        //-------------------------------insert data pegawai-------------------------
+        DB::table('pegawai')->insert([
+              'nama' => 'zulfan',
+              'alamat' => 'banyuwangi',
+              'no hp' => '081234567890'
+               ]);
+        DB::table('pegawai')->insert([
+                'nama' => 'ridho',
+                'alamat' => 'banyuwangi',
+                'no hp' => '089876543210',
+                ]);
+        //----------------------------------------------------------------------------
                
     // DB::table('Supplier')->insert([
     //         'nama' => 'ridho',

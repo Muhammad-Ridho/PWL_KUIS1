@@ -13,7 +13,6 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-<<<<<<< HEAD
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title', 100)->index();
@@ -25,7 +24,6 @@ class CreatePostsTable extends Migration
         
         
            
-=======
     //    Schema::create('posts', function (Blueprint $table) {
     //       $table->id();
     //        $table->string('title', 100)->index();
@@ -52,7 +50,6 @@ class CreatePostsTable extends Migration
                     $table->boolean('draft')->default(false);
                     $table->timestamps();
                     });
->>>>>>> b7a1cb30db4f86b146a30d1e9d36e00ae9ce1713
     }
 
     /**
@@ -62,11 +59,9 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-<<<<<<< HEAD
+
         Schema::dropIfExists('posts');
        
-=======
         Schema::dropIfExists('daftarPegawai');
->>>>>>> b7a1cb30db4f86b146a30d1e9d36e00ae9ce1713
     }
 }
