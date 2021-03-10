@@ -41,7 +41,6 @@ use App\Http\Controllers\BarangController;
     Route::get('/features', [HomeController::class, 'features']);
     Route::get('/contact', [HomeController::class, 'contact']);
 
-    Rooute::get('/barang', [BarangController::class, 'tampilBarang']);
     // Route::get('/barang', [HomeController::class, 'barang']);
     // Route::get('/pelanggan', [HomeController::class, 'pelanggan']);
     // Route::get('/pegawai', [HomeController::class, 'pegawai']);

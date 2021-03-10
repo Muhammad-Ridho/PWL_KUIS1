@@ -14,12 +14,9 @@ class BarangController extends Controller
     public function index()
     {
         //
+        
     }
 
-    public function tampilBarang(){
-        $barang = Barang::find(1);
-        return $barang->title;
-    }
 
     /**
      * Show the form for creating a new resource.
