@@ -12,9 +12,9 @@
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
 				<ul>
 					<li><a href="{{ url('/barang') }}">Daftar Barang</a></li>
-					<li><a href="{{ url('#') }}">Daftar Pelanggan</a></li>
-					<li><a href="{{ url('#') }}">Daftar Pegawai</a></li>
-					<li><a href="{{ url('#') }}">Daftar Supplier</a></li>
+					<li><a href="{{ url('/pelanggan') }}">Daftar Pelanggan</a></li>
+					<li><a href="{{ url('/pegawai') }}">Daftar Pegawai</a></li>
+					<li><a href="{{ url('/supplier') }}">Daftar Supplier</a></li>
 				</ul>
             </ul>
 		</nav>
