@@ -10,6 +10,12 @@
                 <li><a href="{{ url('/about') }}">About</a></li>
                 <li><a href="{{ url('/features') }}">Features</a></li>
                 <li><a href="{{ url('/contact') }}">Contact</a></li>
+				<ul>
+					<li><a href="{{ url('#') }}">Daftar Barang</a></li>
+					<li><a href="{{ url('#') }}">Daftar Pelanggan</a></li>
+					<li><a href="{{ url('#') }}">Daftar Pegawai</a></li>
+					<li><a href="{{ url('#') }}">Daftar Supplier</a></li>
+				</ul>
             </ul>
 		</nav>
 	</div>			
