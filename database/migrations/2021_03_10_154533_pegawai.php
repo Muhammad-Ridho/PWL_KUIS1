@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostsTable extends Migration
+class Pegawai extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,14 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        //
+        Schema::create('pegawai', function (Blueprint $table) {
             $table->id();
-            $table->string('title', 100)->index();
-            $table->string('slug', 100)->index();
-            $table->text('content');
-            $table->boolean('draft')->default(false);
+            $table->string('nama', 100);
+            $table->string('alamat', 100);
+            $table->string('telp', 15);
             $table->timestamps();
             });
-        
-
-                
     }
 
     /**
@@ -33,8 +30,7 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-
-        Schema::dropIfExists('posts');
-       
+        //
+        Schema::dropIfExists('pegawai');
     }
 }

@@ -14,7 +14,7 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        //
+        //---------------------------insert data posts-------------------------------
         // DB::table('posts')->insert([
         //     'title' => 'Belajar Model Dengan Laravel',
         //     'slug' => ' belajar-model-dengan-laravel',
@@ -36,35 +36,42 @@ class PostSeeder extends Seeder
 
         //----------------------insert data pelanggan--------------------------
         // DB::table('pelanggan')->insert([
-        //     'nama' => 'Ridho',
-        //     'alamat' => 'malang',
-        //     'telp' => '085311891925'
-        //     ]);
-        // DB::table('pelanggan')->insert([
-        //     'nama' => 'zulfan',
-        //     'alamat' => 'banyuwangi',
-        //     'telp' => '081234567890'
-        //     ]);
-        //----------------------------------------------------------------------
+        //         'nama' => 'Ridho',
+        //         'alamat' => 'malang',
+        //         'telp' => '085311891925'
+        //     ],
+        //     [
+        //         'nama' => 'zulfan',
+        //         'alamat' => 'banyuwangi',
+        //         'telp' => '081234567890'
+        //         ]);
+        // //----------------------------------------------------------------------
 
         //-------------------------------insert data pegawai-------------------------
         DB::table('pegawai')->insert([
-              'nama' => 'zulfan',
-              'alamat' => 'banyuwangi',
-              'no hp' => '081234567890'
-               ]);
-        DB::table('pegawai')->insert([
+                'nama' => 'zulfan',
+                'alamat' => 'banyuwangi',
+                'telp' => '081234567890'
+            ],
+            [
                 'nama' => 'ridho',
                 'alamat' => 'banyuwangi',
-                'no hp' => '089876543210',
+                'telp' => '089876543210',
                 ]);
         //----------------------------------------------------------------------------
                
-    // DB::table('Supplier')->insert([
-    //         'nama' => 'ridho',
-    //         'alamat' => 'banyuwangi',
-    //         'no hp' => '089876543210',
-    //              ]);
+        //-----------------------------insert data supplier----------------------------
+        DB::table('supplier')->insert([
+                'nama' => 'ridho',
+                'alamat' => 'banyuwangi',
+                'telp' => '089876543210',
+            ],
+            [
+              'nama' => 'zulfan',
+              'alamat' => 'banyuwangi',
+              'telp' => '081234567890'
+               ]);
+        //----------------------------------------------------------------------------
 
     }
 }
