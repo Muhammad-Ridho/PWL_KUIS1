@@ -69,7 +69,7 @@ class HomeController extends Controller
         }
 
         public function barang(){
-            return view('barang');
+            return view('daftarBarang');
         }
 
 }
