@@ -46,17 +46,17 @@ class PostSeeder extends Seeder
     //       'draft' => 0
     //       ]);
 
-    DB::table('Pegawai')->insert([
-              'nama' => 'zulfan',
-              'alamat' => 'banyuwangi',
-              'no hp' => '081234567890'
-               ]);
+    // DB::table('Pegawai')->insert([
+    //           'nama' => 'zulfan',
+    //           'alamat' => 'banyuwangi',
+    //           'no hp' => '081234567890'
+    //            ]);
                
-    DB::table('Supplier')->insert([
-            'nama' => 'ridho',
-            'alamat' => 'banyuwangi',
-            'no hp' => '089876543210',
-                 ]);
+    // DB::table('Supplier')->insert([
+    //         'nama' => 'ridho',
+    //         'alamat' => 'banyuwangi',
+    //         'no hp' => '089876543210',
+    //              ]);
 >>>>>>> b7a1cb30db4f86b146a30d1e9d36e00ae9ce1713
     }
 }
