@@ -20,6 +20,7 @@
 						<td>{{ $b->content}}</td>
 
 					<tr>
+					@endforeach
 				</table>
 			</div>		  			  	
         </div>

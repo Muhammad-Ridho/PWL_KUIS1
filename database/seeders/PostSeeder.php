@@ -25,13 +25,13 @@ class PostSeeder extends Seeder
         //------------------------------------------------------------------------
 
         //--------------------------insert data barang----------------------------
-        // DB::table('barang')->insert([
-        //     'title' => 'Meja Belajar',
-        //     'slug' => ' meja-belajar',
-        //     'image' => 'https://www.sinarmebel.com/wp-content/uploads/2020/01/Meja-Belajar.jpg',
-        //     'content' => 'Meja Belajar',
-        //     'draft' => 0
-        //     ]);
+        DB::table('barang')->insert([
+            'title' => 'Meja Belajar',
+            'slug' => ' meja-belajar',
+            'image' => 'https://www.sinarmebel.com/wp-content/uploads/2020/01/Meja-Belajar.jpg',
+            'content' => 'Meja Belajar',
+            'draft' => 0
+            ]);
         //-----------------------------------------------------------------------
 
         //----------------------insert data pelanggan--------------------------
