@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class PegawaiController extends Controller
+class SupplierController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,8 @@ class PegawaiController extends Controller
     public function index()
     {
         //
-        $pegawai = DB::table('pegawai')->get();
-        return view('daftarPegawai',['pegawai' => $pegawai]);
-
+        $supplier = DB::table('supplier')->get();
+        return view('daftarSupplier',['supplier' => $supplier]);
     }
 
     /**
