@@ -46,5 +46,5 @@ use App\Http\Controllers\PelangganController;
 //-------------------------Kuis 1-------------------------------
     Route::get('/barang', [BarangController::class, 'index']);
     Route::get('/pelanggan', [PelangganController::class, 'index']);
-    // Route::get('/pegawai', [HomeController::class, 'pegawai']);
-    // Route::get('/supplier', [HomeController::class, 'supplier']);
+    Route::get('/pegawai', [PegawaiController::class, 'index']);
+    Route::get('/supplier', [SupplierController::class, 'index']);
