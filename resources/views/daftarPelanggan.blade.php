@@ -4,7 +4,6 @@
 <div class="container">
 		<div class="row">
 			<div class="tm-white-box">
-			<br>
 				<h1>halaman pelanggan</h1>	
 				<table border="1">
 					<tr>
@@ -21,7 +20,6 @@
 					<tr>
 					@endforeach
 				</table>	
-			<br>		
 			</div>		  			  	
         </div>
 </div>
