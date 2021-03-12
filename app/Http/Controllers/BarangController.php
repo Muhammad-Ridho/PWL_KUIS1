@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Support\Facades\DB;
 
 class BarangController extends Controller
 {
@@ -14,6 +15,8 @@ class BarangController extends Controller
     public function index()
     {
         //
+        $barang = DB::table('barang')->get();
+        return view('index',['barang' => $barang]);
         
     }
 

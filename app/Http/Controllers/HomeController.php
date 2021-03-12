@@ -68,9 +68,9 @@ class HomeController extends Controller
             return view('contact');
         }
 
-        // public function barang(){
-        //     return view('daftarBarang');
-        // }
+        public function barang(){
+            return view('daftarBarang');
+        }
 
         public function pelanggan(){
             return view('daftarPelanggan');
