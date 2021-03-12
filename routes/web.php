@@ -42,11 +42,7 @@ use App\Http\Controllers\BarangController;
     Route::get('/contact', [HomeController::class, 'contact']);
 
 //-------------------------Kuis 1-------------------------------
-    // Route::get('/barang', 'BarangController@index');
     Route::get('/barang', [BarangController::class, 'index']);
-
-
-    // Route::get('/barang', [HomeController::class, 'barang']);
-    // Route::get('/pelanggan', [HomeController::class, 'pelanggan']);
+    Route::get('/pelanggan', [PelangganController::class, 'index']);
     // Route::get('/pegawai', [HomeController::class, 'pegawai']);
     // Route::get('/supplier', [HomeController::class, 'supplier']);
