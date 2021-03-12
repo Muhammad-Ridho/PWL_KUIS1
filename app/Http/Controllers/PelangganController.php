@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class PelangganController extends Controller
 {
@@ -15,7 +17,7 @@ class PelangganController extends Controller
     {
         //
         $pelanggan = DB::table('pelanggan')->get();
-        return view('daftarPelanggan',['pelanggan' => $barang]);
+        return view('daftarPelanggan',['pelanggan' => $pelanggan]);
     }
 
     /**
