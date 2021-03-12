@@ -16,7 +16,7 @@ class BarangController extends Controller
     {
         //
         $barang = DB::table('barang')->get();
-        return view('index',['barang' => $barang]);
+        return view('daftarBarang',['barang' => $barang]);
         
     }
 
